@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <style type="text/css">
+
+    * {
+       margin: 0;
+       padding: 0;
+       font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei",Arial;
+   }
+
+   div#list {
+       width: 780px;
+       height: 500px;
+       margin: 50px auto;
+   }
+
+   ul {
+       width: 780px;
+       height: 40px;
+       list-style-type: none;
+       overflow: hidden;
+   }
+
+   ul li {
+       float: left;
+       width: 142px;
+       height: 20px;
+       margin-top: 10px;
+       margin-right: 5px;
+       background-color: #E4E4E4;
+       color: black;
+       font-size: 14px;
+       line-height: 20px;
+       padding: 5px;
+       text-align: center;
+       cursor: pointer;
+   }
+
+   ul li:last-child {
+       margin-right: 0;
+   }
+
+   .clearFloat:after {
+       display: block;
+       content: '';
+       clear: both;
+       visibility: hidden;
+       height: 0;
+   }
+
+   .clearFloat {
+       zoom: 1;
+   }
+
+   p {
+       height: 780px;
+       height: 450px;
+       margin-top: 10px;
+   }
+
+   p span {
+       float: left;
+       width: 152px;
+       height: 25px;
+       line-height: 25px
+       font-size: 13px;
+       margin-right: 5px;
+       vertical-align: middle;
+       white-space: nowrap;
+       letter-spacing: 1px;
+   }
+
+   p span.last {
+       margin-right: 0px;
+   }
+
+   li.selected {
+       height: 40px;
+       background-color: #FDAC49;
+       color: white;
+       line-height: 40px;
+       margin-top: 0;
+   }
+
+   p.selected {
+       display: block;
+   }
+
+   p {
+       display: none;
+   }
+
+   </style>
+</head>
+<body>
+    <div id="list">
+    	<ul class="clearFloat">
+    		<li id="first" class="selected">第一期中奖名单</li>
+    		<li id="second">第二期中奖名单</li>
+    		<li id="third">第三期中奖名单</li>
+    		<li id="fourth">第四期中奖名单</li>
+    		<li id="fifth" class="last">第五期中奖名单</li>
+    	</ul>
+
+    	<p id="list1" class="selected">
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last">司马淇</span>
+    		<span>司马淇</span><span>司马淇</span><span>司马淇</span><span>司马淇</span><span class="last clearFloat">司马淇</span>
+    	</p>
+
+        <p id="list2">
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+          <span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span>司马淇2</span><span class="last">司马淇2</span>
+      </p>
+
+      <p id="list3">
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+          <span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span>司马淇3</span><span class="last">司马淇3</span>
+      </p>
+
+      <p id="list4">
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+          <span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span>司马淇4</span><span class="last">司马淇4</span>
+      </p>
+
+      <p id="list5">
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+          <span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span>司马淇5</span><span class="last">司马淇5</span>
+      </p>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $("ul li").click(function(event) {
+         var index = $(this).index() + 1;
+         $("p[class='selected']").removeClass('selected');
+         $("li[class='selected']").removeClass('selected');
+         $("#list" + index).attr('class', 'selected');
+         $(this).attr('class', 'selected');
+     });
+      
+  });
+  </script>
+</body>
+</html>

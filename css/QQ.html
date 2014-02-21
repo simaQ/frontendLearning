@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HTML+CSS画一个QQ对话框</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <style type="text/css">
+    * {
+       margin: 0;
+       padding: 0;
+   }
+
+   #container {
+       width: 544px;
+       height: 516px;
+       border-radius: 3px;
+       margin: 10px auto;
+       border: 1px solid rgb(255 ,216 ,144);
+       box-shadow: 1px 1px 2px rgb(255 ,216 ,144), -1px -1px 2px rgb(255 ,216 ,144);
+   }
+
+   ul {
+       list-style-type: none;
+   }
+
+   .header {
+       width: 100%;
+       height: 57px;
+       background-color: rgb(252, 243,168);
+   }
+
+   .card {
+       float: left;
+       padding: 5px;
+   }
+
+   .card img {
+       float: left;
+       margin-right: 5px;
+   }
+
+   .card ul {
+       float: right;
+   }
+
+   .card ul p {
+       font-size: 1.3em;
+       font-weight: bold;
+   }
+
+   li#signature {
+       padding-left: 15px;
+       background: url(qzone.png) 0 0 no-repeat;
+   }
+
+   .dialogMenu {
+       float: right;
+   }
+
+   .dialogMenu ul li.dialogicon {
+       display: inline;
+       border-left: 1px solid gray;
+       width: 25px;
+       margin-left: -8px;
+       /*margin-top: 1px;*/
+   }
+
+   .dialogMenu ul img {
+    width: 25px;
+    height: 15px;
+}
+
+ul.sub {
+	display: none;
+}
+
+div.toolbar {
+    clear: both;
+    position: relative;
+    background-color: rgb(252, 243,168);
+}
+
+ul#chatToolbar li{
+    display: inline;
+}
+
+ul#chatToolbar li:last-child {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+
+div#messageDisplay {
+    width: 100%;
+    height: 270px;
+    background-color: white;
+}
+
+div#textToolbar {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(252, 243,168);
+}
+
+div#textToolbar ul {
+    position: relative;
+    padding: 2px;
+}
+
+div#textToolbar ul li {
+    display: inline;
+}
+
+div#textToolbar ul li:last-child {
+    position: absolute;
+    right: 3px;
+    padding-left: 25px;
+    background: url(msgRecord.png) 0 0 no-repeat; 
+}
+
+div#inputDiv {
+    height: 105px;
+    width: 100%;
+}
+
+#footer {
+    width: 100%;
+    height: 26px;
+    background-color: rgb(252, 243,168);
+}
+
+#footer ul {
+    padding: 3px;
+}
+
+#footer ul li {
+    display: inline;
+}
+
+#footer ul li:first-child {
+    float: left;
+    margin-right: 300px;
+}
+
+#footer ul li:first-child a {
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+}
+
+#footer ul li:lt(1) {
+    float: right;
+}
+
+input[type="button"] {
+    width: 70px;
+    border-radius: 3px;
+    border: 1px solid black;
+    height: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+    	<div class="header">
+    		<div class="card">
+    			<img src="min-logo.png" class="userpic">
+    			<ul>
+                  <li><p class="username">脑残</p></li>
+                  <li id="signature">|fighting!!!</li>
+              </ul>	
+          </div>
+          <div class="dialogMenu">
+             <ul>
+                <li class="dialogicon"><img src="unfold.png" alt="unfold icon">
+                   <ul class="sub">
+                      <li>1</li>	
+                      <li>2</li>	
+                      <li>3</li>	
+                      <li>4</li>	
+                  </ul>	
+              </li>
+              <li class="dialogicon"><img src="min.png" alt="min icon"></li>	
+              <li class="dialogicon"><img src="max.png" alt="max icon"></li>	
+              <li class="dialogicon"><img src="close.png" alt="close icon"></li>
+          </ul>	
+      </div>
+  </div>	
+  <div class="toolbar">
+    <ul id="chatToolbar">
+        <li><img src="camera.png"></li>
+        <li><img src="microphone.png"></li>
+        <li><img src="folder.png"></li>
+        <li><img src="discuss.png"></li>
+        <li><img src="remote.png"></li>
+        <li><img src="transfer.png"></li>
+        <li><img src="app.png"></li>
+        <li><img src="ad.png"></li>
+    </ul>
+</div>
+<div id="messageDisplay"></div>
+<div id="textToolbar">
+    <ul>
+        <li><img src="fontface.png"></li>
+        <li><img src="smile.png"></li>
+        <li><img src="hat.png"></li>
+        <li><img src="shake.png"></li>
+        <li><img src="huatong.png"></li>
+        <li><img src="hangpad.png"></li>
+        <li><img src="image.png"></li>
+        <li><img src="misc.png"></li>
+        <li><img src="clip.png"></li>
+        <li>消息记录</li>
+    </ul>
+</div>
+<div id="inputDiv"></div>
+<div id="footer">
+    <ul>
+        <li><a href="#">小萌怀孕了!</a></li>
+        <li><input type="button" value="关闭(c)"></li>
+        <li><input type="button" value="发送(s)"></li>
+        <li></li>
+    </ul>
+
+</div>
+</div>
+</body>
+</html>
